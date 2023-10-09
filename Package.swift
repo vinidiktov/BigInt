@@ -10,12 +10,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "BigInt",
+    name: "BigIntKit",
     products: [
-        .library(name: "BigInt", targets: ["BigInt"])
+        .library(name: "BigIntKit", targets: ["BigIntKit"])
     ],
     targets: [
-        .target(name: "BigInt", path: "Sources"),
-        .testTarget(name: "BigIntTests", dependencies: ["BigInt"], path: "Tests")
+        .target(name: "BigIntKit", path: "Sources"),
+        .testTarget(name: "BigIntTests", dependencies: ["BigIntKit"], path: "Tests")
     ]
 )
